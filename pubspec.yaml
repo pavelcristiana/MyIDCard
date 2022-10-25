@@ -9,11 +9,14 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  provider: ^6.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  integration_test:
+      sdk: flutter
+  test: ^1.14.4
   flutter_lints: ^2.0.0
 
 flutter:
@@ -21,7 +24,12 @@ flutter:
   assets:
     - images/flutter.png
     - images/MicrosoftTeams-image.png
-
+    - images/dice1.png
+    - images/dice2.png
+    - images/dice3.png
+    - images/dice4.png
+    - images/dice5.png
+    - images/dice6.png
   fonts:
     - family: Satisfy
       fonts:

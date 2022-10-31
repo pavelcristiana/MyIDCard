@@ -1,14 +1,12 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:i_am_rich/page/dice_page.dart';
+import 'package:i_am_rich/page/music_page.dart';
 import 'package:i_am_rich/page/my_id_card.dart';
+import 'package:i_am_rich/page/quiz_page.dart';
 import 'package:provider/provider.dart';
 import 'package:i_am_rich/model/navigation_item.dart';
-import 'package:i_am_rich/widget/navigation_drawer_widget.dart';
 import 'package:i_am_rich/provider/navigation_provider.dart';
-import 'model/navigation_item.dart';
-import 'package:i_am_rich/main.dart';
-import 'package:i_am_rich/page/my_id_card.dart';
-
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,19 +23,18 @@ class MainPage extends StatefulWidget {
 }
 
 class MyApp extends StatelessWidget {
-
   static final String title = 'Navigation Menu';
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(
-    create: (context) => NavigationProvider(),
-    child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: title,
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
-      home: MainPage(),
-    ),
-  );
+        create: (context) => NavigationProvider(),
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: title,
+          theme: ThemeData(primarySwatch: Colors.deepOrange),
+          home: MainPage(),
+        ),
+      );
 }
 
 class _MainPageState extends State<MainPage> {
@@ -53,9 +50,10 @@ class _MainPageState extends State<MainPage> {
         return MyIDCardPage();
       case NavigationItem.dicee:
         return DicePage();
-      case NavigationItem.Xylophone:
-        return DicePage();
-       }
+      case NavigationItem.piano:
+        return MusicApp();
+      case NavigationItem.quiz:
+        return QuizPage();
+    }
   }
-
 }

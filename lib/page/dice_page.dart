@@ -1,5 +1,5 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:i_am_rich/main.dart';
 import 'package:i_am_rich/widget/navigation_drawer_widget.dart';
 import 'dart:math';
 
@@ -31,8 +31,11 @@ class _DicePageState extends State<DicePage> {
         ),
         body: SafeArea(
           child: Center(
+
             child: Row(
               children: [
+
+
                 Expanded(
                     child: MaterialButton(
                   onPressed: () {
@@ -51,8 +54,12 @@ class _DicePageState extends State<DicePage> {
                       },
                       child: Image.asset('images/dice$rightDiceNumber.png')),
                 ),
+
               ],
+
             ),
+
+
           ),
         ),
       ),

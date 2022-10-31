@@ -10,6 +10,10 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   provider: ^6.0.3
+  audioplayers: ^1.1.1
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +34,8 @@ flutter:
     - images/dice4.png
     - images/dice5.png
     - images/dice6.png
+
+
   fonts:
     - family: Satisfy
       fonts:

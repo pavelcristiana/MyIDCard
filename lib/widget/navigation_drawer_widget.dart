@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:i_am_rich/model/navigation_item.dart';
@@ -27,10 +28,16 @@ class NavigationDrawerWidget extends StatelessWidget {
                         icon: Icons.videogame_asset_sharp),
                     const SizedBox(height: 26),
                     buildMenuItem(context,
-                        item: NavigationItem.Xylophone,
-                        text: 'Xylophone',
-                        icon: Icons.music_note)
+                        item: NavigationItem.piano,
+                        text: 'Piano',
+                        icon: Icons.music_note),
+                    const SizedBox(height: 26),
+                    buildMenuItem(context,
+                        item: NavigationItem.quiz,
+                        text: 'Quiz',
+                        icon: Icons.quiz),
                   ],
+
                 ),
               ),
             ],
